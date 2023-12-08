@@ -44,7 +44,7 @@ Compute action from state tensor. The noise is OrnsteinUhlenbeckNoise.
         ...
 ```
 If the episode is over the Q-value is just reward. During the episode(agent is driving without collision) the q-value would calculated as below.   
-$$L(\phi,D)=\underset{(s,a,r,s',d)~\mathcal{D}}{E}[(Q_\phi(s,a)-(r+\gamma(1-d)\underset{a'}{\mathrm{max}Q^*(s',a'}))]$$
+$$L(\phi,D)=\underset{(s,a,r,s',d)~\mathcal{D}}{E}[(Q_\phi(s,a)-(r+\gamma(1-d)\underset{a'}{\mathrm{max}Q^*(s',a'}))^2]$$
 
 ## Result
 The agent is not learning well: after about 100,000 epochs of training, the agent is still not moving forward turning right and crash with the wall. This indicates a problem in the code, and I'm planning to fix it. I need to learn more about the algorithm.
