@@ -1,6 +1,11 @@
 # RL_TermProject-DDPG
 This is a project to learn MLAgent by applying the DDPG algorithm.   
 The base code is forked from [here](https://github.com/spiz26/RL_TermProject) provied in Seoultech RL lecture in Late 2023.   
+## Files
+```
+Kart_DDPG.ipynb - Main
+Kart_example.ipynb - I tried several things on this notebook
+```
 
 ## Code
 ### DDPG class
